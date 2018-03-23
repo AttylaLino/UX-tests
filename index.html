@@ -1,84 +1,270 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
-.menu {
-  float: left;
-  width: 20%;
-}
-.menuitem {
-  padding: 8px;
-  margin-top: 7px;
-  border-bottom: 1px solid #f1f1f1;
-}
-.main {
-  float: left;
-  width: 60%;
-  padding: 0 20px;
-  overflow: hidden;
-}
-.right {
-  background-color: lightblue;
-  float: left;
-  width: 20%;
-  padding: 10px 15px;
-  margin-top: 7px;
-}
 
-@media only screen and (max-width:800px) {
-  /* For tablets: */
-  .main {
-    width: 80%;
-    padding: 0;
-  }
-  .right {
-    width: 100%;
-  }
-}
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
-  }
-}
-</style>
-</head>
-<body style="font-family:Verdana;">
 
-<div style="background-color:#f1f1f1;padding:15px;">
-  <h1>The Puplit Rock</h1>
-</div>
+<!DOCTYPE HTML>
+	<head>
 
-<div style="overflow:auto">
-  <div class="menu">
-    <div class="menuitem">The Drive</div>
-    <div class="menuitem">The Walk</div>
-    <div class="menuitem">The Return</div>
-    <div class="menuitem">The End</div>
-  </div>
+		<meta charset="utf-8">
 
-  <div class="main">
-    <h2>The Walk</h2>
-    <p>The walk to the Pulpit Rock will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.</p>
-    <img src="img_pulpit.jpg" style="width:100%">
-  </div>
+		<title>Project_v2 - Proto.io</title>
 
-  <div class="right">
-    <h2>What?</h2>
-    <p>The Pulpit Rock is a part of a mountain that looks like a pulpit.</p>
-    <h2>Where?</h2>
-    <p>The Pulpit Rock is in Norway.</p>
-    <h2>Price?</h2>
-    <p>The Walk is free!</p>
-  </div>
-</div>
+		
+			<meta name="HandheldFriendly" content="True">
+			<meta name="MobileOptimized" content="375"> 
 
-<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;">This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.</div>
+			
+			
+			<meta name="viewport" content="width=device-width, minimum-scale=1.00, maximum-scale=1.00, initial-scale=1.00, user-scalable=no, target-densitydpi=device-dpi, shrink-to-fit=no, viewport-fit=cover" />
 
-</body>
+			
+				<meta name="apple-mobile-web-app-capable" content="yes" />
+				<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+			
+
+			<meta name="format-detection" content="telephone=no">
+
+
+			
+
+			<link rel="shortcut icon" href="apple-touch-icon.png">
+
+			
+				
+				<link href="./assets/branding/apple-touch-icon-ipad-pro.png" sizes="167x167" rel="apple-touch-icon-precomposed">
+
+				
+				<link href="./assets/branding/apple-touch-icon-ipad-retina.png" sizes="152x152" rel="apple-touch-icon-precomposed">
+
+				
+				<link href="./assets/branding/apple-touch-icon-retina144.png" sizes="144x144" rel="apple-touch-icon-precomposed">
+
+				
+				<link href="./assets/branding/apple-touch-icon-old-ipad.pngapple-touch-icon-old-ipad.png" sizes="76x76" rel="apple-touch-icon-precomposed">
+
+				
+				<link href="./assets/branding/apple-touch-icon-ipad.png" sizes="72x72" rel="apple-touch-icon-precomposed">
+
+				
+				<link href="./assets/branding/apple-touch-icon-retina180.png" sizes="180x180" rel="apple-touch-icon-precomposed">
+
+				
+				<link href="./assets/branding/apple-touch-icon-retina.png" sizes="114x114" rel="apple-touch-icon-precomposed">
+
+				
+				<link href="./assets/branding/apple-touch-icon.png" sizes="57x57" rel="apple-touch-icon-precomposed">
+
+				
+				<link href="./assets/branding/startup.png" media="(device-width: 320px)" rel="apple-touch-startup-image">
+
+				
+				<link href="./assets/branding/startup-retina.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+				
+				<link href="./assets/branding/startup-568.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+				
+				<link href="./assets/branding/startup-retina-6.png" media="(device-width: 375px) and (device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+				
+				<link href="./assets/branding/startup-retina-6plus.png" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
+
+				
+				<link href="./assets/branding/startup-retina-6plus-landscape.png" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
+
+				
+				<link href="./assets/branding/startup-ipad.png" media="(device-width: 768px) and (orientation: portrait)" rel="apple-touch-startup-image">
+
+				
+				<link href="./assets/branding/startup-ipad-landscape.png" media="(device-width: 768px) and (orientation: landscape)" rel="apple-touch-startup-image">
+
+				
+				<link href="./assets/branding/startup-ipad-retina.png" media="(device-width: 768px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+				
+				<link href="./assets/branding/startup-ipad-landscape-retina.png" media="(device-width: 768px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+				
+				<link href="./assets/branding/startup-ipad-pro.png" media="(device-width: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+				
+				<link href="./assets/branding/startup-ipad-pro-landscape.png" media="(device-width: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+			
+
+			<meta http-equiv="cleartype" content="on"> 
+
+
+			
+				<link rel="stylesheet" href="./stylesheets/player-engine-export-min.css" />
+				<script type="text/javascript" src="./scripts/player-engine-export-min.js"></script>
+			
+
+			
+			<script type="text/javascript" src="./libraries/common/components.js"></script> 
+			<link type="text/css" rel="Stylesheet" href="./libraries/common/components.1.00.css" /> 
+
+			
+					<script type="text/javascript" src="./libraries/metro/components.js"></script> 
+					<link type="text/css" rel="Stylesheet" href="./libraries/metro/components.1.00.css" /> 
+				
+					<script type="text/javascript" src="./libraries/ios7/components.js"></script> 
+					<link type="text/css" rel="Stylesheet" href="./libraries/ios7/components.1.00.css" /> 
+				
+					<script type="text/javascript" src="./libraries/material/components.js"></script> 
+					<link type="text/css" rel="Stylesheet" href="./libraries/material/components.1.00.css" /> 
+				
+				<script type="text/javascript" src="./data/data.js"></script> 
+			
+			    <script type="text/javascript" src="./scripts/plugins/bodymovin/bodymovin.min.js"></script> 
+			     <script type="text/javascript" src="./bodymovin/bodymovinAnimations.js"></script> 
+
+		<style>
+			body { width: 375px; height: 667px; }
+			.landscape, .landscape .prx-page { min-height: 375px; }
+			.portrait, .portrait .prx-page { min-height: 667px; }
+		</style>
+
+		<script type="text/javascript">
+
+			prx.url.account = 'https://ecs733p.proto.io';
+			prx.url.staticassets = 'https://gal.proto.io';
+			prx.url.devices = 'https://dteyv52hbg2at.cloudfront.net/devices';
+			prx.url.static = 'https://dteyv52hbg2at.cloudfront.net';
+			prx.url.siteurl = 'proto.io';
+			prx.url.crossmsg = 'https://ecs733p.proto.io';
+
+			prx.nodejsassetsserver = {};
+			prx.nodejsassetsserver.host = ".proto.io";
+			prx.nodejsassetsserver.subdomainprefix = "https://at";
+			prx.nodejsassetsserver.maxsubdomains = "20";
+
+			prx.device_library = 'ios9';
+			prx.devices[prx.device] = {
+				name: prx.device
+				,defaultOrientation: 'portrait'
+				,portrait_applies: 1 //new
+				,portrait: [375,667]
+				,landscape_applies: 1 //new
+				,landscape: [667,375]
+				,allow_orientation_change: 1 //new
+				,statusbar_skin: 'default' // new
+				,statusbarheightportrait: 0
+				,statusbarheightlandscape: 0
+				,navigationbar_skin: 'default' //new
+				,navigationbarheightportrait: 0
+				,navigationbarheightlandscape: 0
+				,normalportrait: [375,667]
+				,normallandscape: [667,375]
+				,device_s3bucket: '4503236e-3349-477f-8b4c-1166f831a709'
+				,dpr: '1.00'
+				,deviceType: "default"
+				,showiPhoneXNotch: false
+				,scrollType: "default"
+				,initialscale: 1.00
+				,targetdensitydpi: "device-dpi"
+			}
+
+			prx.projectsettings.id = 'f1c5acba-93a8-4c09-95cb-2f953e477b96';
+			prx.projectsettings.s3b = 'ecs733p-63416-proto';
+			prx.projectsettings.account = 'ecs733p';
+			prx.projectsettings.statusbar = '0'; 
+			prx.projectsettings.statusbarapplies = '0';
+			prx.projectsettings.navigationbar = '0';
+			prx.projectsettings.navigationbarapplies = '0';
+			prx.projectsettings.initialpageid = -1;
+			
+			
+			prx.projectsettings.flashactions = 1;
+			prx.projectsettings.gatrackingcode = '';
+
+			prx.export2html = '1' == true;
+			prx.mobPlayer = 0;
+
+			prx.user.country = 'US';
+
+			prx.s3Links = []; 
+			var sLinkedAssets = [];
+			
+				sLinkedAssets["p_5c72fcee2716b191d6fffda0cff355ea"]="https://intranet.eecs.qmul.ac.uk/dept/documentmanager/publicdownload/fileid/718";
+				
+
+			prx.csrf_token = '83B38613ABC13587999E2FCAD0B084B8B1238AE39A89EB493239F7194B788052';
+
+            
+
+            
+                            prx.assetsAccessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkIjp7InVpZCI6Ii0xIiwicHJvamVjdF9pZCI6ImYxYzVhY2JhLTkzYTgtNGMwOS05NWNiLTJmOTUzZTQ3N2I5NiJ9LCJ2IjowLCJleHAiOjE1MjE5ODcxNTksImlhdCI6MTUyMTgwNzE1OX0.SqkgCo-FzaK-Toq3oPxm9R49CcrJ7G8hY5dD4sorzho";
+
+			prx.iniPlayer.iniPreLoad();
+
+
+			 
+			
+
+		</script>
+	</head>
+
+	
+			<body class="player device-cursor-touch mobile-device-true" id="mbd" >
+
+				
+				<div id="window-wrapper">
+					<div id="dragarea"></div>
+					<div id="statusbar"></div>
+					<div id="underlay" style=""></div>
+
+					<div class="prx-page" data-role="page" id="p-7" data-id="7"></div>
+					
+								<div class="prx-page" data-role="page" id="p-13" data-id="13"></div>
+							
+								<div class="prx-page" data-role="page" id="p-14" data-id="14"></div>
+							
+								<div class="prx-page" data-role="page" id="p-15" data-id="15"></div>
+							
+								<div class="prx-page" data-role="page" id="p-16" data-id="16"></div>
+							
+								<div class="prx-page" data-role="page" id="p-17" data-id="17"></div>
+							
+								<div class="prx-page" data-role="page" id="p-19" data-id="19"></div>
+							
+								<div class="prx-page" data-role="page" id="p-20" data-id="20"></div>
+							
+								<div class="prx-page" data-role="page" id="p-21" data-id="21"></div>
+							
+								<div class="prx-page" data-role="page" id="p-22" data-id="22"></div>
+							
+								<div class="prx-page" data-role="page" id="p-24" data-id="24"></div>
+							
+								<div class="prx-page" data-role="page" id="p-25" data-id="25"></div>
+							
+								<div class="prx-page" data-role="page" id="p-26" data-id="26"></div>
+							
+								<div class="prx-page" data-role="page" id="p-27" data-id="27"></div>
+							
+								<div class="prx-page" data-role="page" id="p-28" data-id="28"></div>
+							
+								<div class="prx-page" data-role="page" id="p-29" data-id="29"></div>
+							
+								<div class="prx-page" data-role="page" id="p-30" data-id="30"></div>
+							
+								<div class="prx-page" data-role="page" id="p-31" data-id="31"></div>
+							
+					<div id="navigationbar"></div>
+					<div id="overlay"></div>
+					<div id="trash"></div>
+					<div id="quick-audios"></div>
+				</div>
+
+				 
+			<div id="loader-wrapper">
+				
+				<div class="progress">
+					<div class="progress-bar"></div>
+				</div>
+				<div id="poweredby"></div>
+			</div>
+			
+
+
+			</body>
+		
+
 </html>
-
